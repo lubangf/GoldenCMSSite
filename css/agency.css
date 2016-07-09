@@ -739,3 +739,8 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #fed136;
 }
+.list-items {
+	max-width: 500px;
+	text-align: left;
+	margin: 0 auto;
+}
