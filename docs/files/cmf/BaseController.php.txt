@@ -1,11 +1,15 @@
 <?php
+/** BaseController Class */
+
 /**
- * @version		$Id: basecontroller.php 1 2012-05-20 18:18:12Z farhad $
- * @package		GoldenCMS
- * @copyright	Copyright (c) 2015 GoldenCMS (http://goldencms.com). All rights reserved.
- * @license		Commercial ( http://goldencms.com/license.html )
- * @author		Farhad Sakhaei ( http://goldencms.com )
- * @description Base Controller Class
+ * BaseController Class
+ *
+ * BaseController initialize other modules and their settings, routes, locales, ...
+ *
+ * @package    CMF
+ * @copyright  http://goldencms.com
+ * @license    http://www.php.net/license/3_01.txt  PHP License 3.01
+ * @version    $Id$
  */
 
 class BaseController extends Prefab {
@@ -17,7 +21,8 @@ class BaseController extends Prefab {
 	
 	/** @var string moduleDir */
 	protected $moduleDir;
-
+	
+	/** Constructor */
 	protected function __construct(){
 		/** Check if module active or not, if not active return false */
 		if (!$this->isactive()){
