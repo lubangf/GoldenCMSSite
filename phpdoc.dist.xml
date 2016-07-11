@@ -43,5 +43,5 @@
 
 <!--
 cd D:\xampp\phpDocumentor2-2.9.0\bin
-php D:\xampp\phpDocumentor2-2.9.0\bin\phpdoc.php --directory "D:\xampp\htdocs\GoldenCMS" --target "d:\xampp\htdocs\GoldenCMSSite\docs" --encoding="utf-8" --ignore="D:\xampp\htdocs\GoldenCMS\cmf\libs\*" --ignore="*.phtml" --title="GoldenCMS"
+php D:\xampp\phpDocumentor2-2.9.0\bin\phpdoc.php --directory "D:\xampp\htdocs\GoldenCMS" --target "d:\xampp\htdocs\GoldenCMSSite\docs" --encoding="utf-8" --ignore="D:\xampp\htdocs\GoldenCMS\cmf\libs\*" --ignore="*.phtml" --ignore="tmp*" --title="GoldenCMS"
 -->
