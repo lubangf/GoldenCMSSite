@@ -1,15 +1,22 @@
 <?php
+/** Content Management Framework Class */
+
 /**
- * @version		$Id: CMF.php 1 2012-05-20 18:18:12Z farhad $
- * @package		GoldenCMS
- * @copyright	Copyright (c) 2015 GoldenCMS (http://goldencms.com). All rights reserved.
- * @license		Commercial ( http://goldencms.com/license.html )
- * @author		Farhad Sakhaei ( http://goldencms.com )
- * @description CMF Class
+ * Content Management Framework Class
+ *
+ * This is the main class of CMF
+ *
+ * @package    CMF
+ * @copyright  http://goldencms.com
+ * @license    http://goldencms.com/license.txt  MIT License
  */
+
 
 class CMF extends Prefab {
 
+	/**
+	 * Bootstrap of the CMF
+	 */
 	public static function bootstrap() {
 		$fw = Base::instance();
 		$fw->CMF_VERSION = '1.0';
@@ -344,7 +351,10 @@ class CMF extends Prefab {
 			}
 		}
 	}
-	
+
+	/**
+	 * Checks the server compatibility and writable folders
+	 */
 	public static function check_system () {
 		$fw = Base::instance();
 
